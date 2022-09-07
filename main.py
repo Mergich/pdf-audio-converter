@@ -10,7 +10,7 @@ import os
 
 # ---------------------------------------------EXTRACT TEXT FROM PDF----------------------------------------------------
 all_text = ''
-pdf = pdfplumber.open('Trivandi Chanzo_Employment Reference_MS.pdf')
+pdf = pdfplumber.open('name_of_your_pdf.pdf')
 for page in pdf.pages:
     single_page_text = page.extract_text()
     # print(single_page_text)
